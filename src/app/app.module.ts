@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ObituariesModule } from './obituaries/obituaries.module';
+import { ObituaryComponent } from './obituaries/obituary/obituary.component';
 
 @NgModule({
   declarations: [
@@ -10,7 +12,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ObituariesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
