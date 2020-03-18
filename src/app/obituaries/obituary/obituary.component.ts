@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ObituaryComponent implements OnInit {
 
-  constructor() { }
+  name;
+  age=69;
+  obituaryText;
+
+  constructor() {
+    this.createObituary('Joe Elevatorbutt', 'They died. The end.') 
+   }
 
   ngOnInit(): void {
+  }
+
+  createObituary(inputname, inputobituaryText) {
+    this.name=inputname;
+    this.obituaryText=inputobituaryText;
   }
 
 }
