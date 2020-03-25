@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ObituariesModule } from './obituaries/obituaries.module';
 import { ObituaryComponent } from './obituaries/obituary/obituary.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ClarityModule } from '@clr/angular';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { ObituaryComponent } from './obituaries/obituary/obituary.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ObituariesModule
+    ObituariesModule,
+    BrowserAnimationsModule,
+    ClarityModule
   ],
   providers: [],
   bootstrap: [AppComponent]
